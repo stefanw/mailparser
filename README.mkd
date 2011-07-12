@@ -1,0 +1,25 @@
+mailparser
+==========
+
+mailparser will (hopefully someday) be a Python library that reliably parses 99.9% of mails
+and provides an easy access to contained information ranging from simple header fields,
+body parts and attachments to extracting Outlook TNEF, Delivery Status
+Notifications and other exotic stuff.
+
+
+Why? There is the built-in email module!
+----------------------------------------
+
+You may have used it and it may be a bit difficult, but it kinda worked for your text email.
+Sadly, email comes in many forms and some of them are not recognized by Python's email module.
+
+
+How will this work?
+-------------------
+
+Don't know yet. This project will take all tests from [mikel's Mail](https://github.com/mikel/mail) and probably also some code. Mail uses an own grammar and it looks like this project might have to go the same way.
+
+The API will be easier than Python's email module (not that hard).
+
+At this point I do _not_ plan to include mail construction, but only
+mail parsing.
